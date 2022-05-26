@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Clicker But better!</title>
+  <style>
+  
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  
+  #hero{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background:red;
+  }
+  
+  #header{
+    position:fixed;
+    height:20%;
+    width:100%;
+    background:green;
+    text-align:center;
+  }
+  
+  #header p{
+   font-size:2rem;
+   font-family:calibri;
+   line-height:300%;
+  }
+  
+  #mainbody{
+    position:absolute;
+    width:100%;
+    height:80%;
+    background:pink;
+    top:20%;
+    
+  }
+  
+  #mc {
+    position:relative;
+    top:-15%;
+    left:8%;
+  }
+  </style>
+</head>
+<body>
+  <div id="hero">
+  <div id="header">
+  <p>
+  Current Cookies: <span id="cookies">0</span>
+  </p>
+  </div>
+  <div id="mainbody">
+  <img src="https://raw.githubusercontent.com/gitperson123/cooke-cliker-clone/main/unnamed-removebg-preview.png" alt="cookie" id="mc">
+  </div>
+  </div>
+  <script>
+ var click = 0;
+ mc.addEventListener("click", function(){
+ click += 1
+ cookies.textContent = click
+ })
+</script>
+</body>
+</html>
